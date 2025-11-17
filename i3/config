@@ -29,6 +29,9 @@ exec_always feh --bg-scale ~/dotfiles/wallpapers/nord_arch.png
 # Polybar
 exec_always --no-startup-id ~/.config/polybar/launch.sh
 
+# Faster keyboard repeat rate for scrolling
+exec --nostartup-id xset r rate 200 35
+
 # Picom
 exec_always --nostartup-id picom -b
 
