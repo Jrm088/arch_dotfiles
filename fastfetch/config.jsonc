@@ -5,8 +5,8 @@
   "logo": {
     "type": "auto",
     "color": {
-      "1": "#61AFEF",        // Primary color for Arch logo
-      "2": "#ABB2BF",        // Secondary color
+      "1": "#88c0d0",        // Primary color for Arch logo
+      "2": "#d8dee9",        // Secondary color
       "3": "cyan"            // Additional color
     }
   },
@@ -15,8 +15,8 @@
   "display": {
     "separator": " → ",
     "color": {
-      "keys": "#61AFEF",     // Color for labels (OS, CPU, etc.)
-      "title": "#61AFEF"     // Color for your username@hostname
+      "keys": "#88c0d0",     // Color for labels (OS, CPU, etc.)
+      "title": "#88c0d0"     // Color for your username@hostname
     }
   },
   
@@ -34,22 +34,22 @@
     {
       "type": "os",
       "key": "  ├ OS",
-      "keyColor": "#61AFEF"
+      "keyColor": "#88c0d0"
     },
     {
       "type": "host",
       "key": "  ├ Host",
-      "keyColor": "#61AFEF"
+      "keyColor": "#88c0d0"
     },
     {
       "type": "kernel",
       "key": "  ├ Kernel",
-      "keyColor": "#61AFEF"
+      "keyColor": "#88c0d0"
     },
     {
       "type": "uptime",
       "key": "  └ Uptime",
-      "keyColor": "#61AFEF"
+      "keyColor": "#88c0d0"
     },
     "break",
     
@@ -61,12 +61,12 @@
     {
       "type": "packages",
       "key": "  ├ Packages",
-      "keyColor": "#61AFEF"
+      "keyColor": "#88c0d0"
     },
     {
       "type": "shell",
       "key": "  └ Shell",
-      "keyColor": "#61AFEF"
+      "keyColor": "#88c0d0"
     },
     "break",
     
@@ -78,27 +78,27 @@
     {
       "type": "wm",
       "key": "  ├ WM",
-      "keyColor": "#61AFEF"
+      "keyColor": "#88c0d0"
     },
     {
       "type": "wmtheme",
       "key": "  ├ WM Theme",
-      "keyColor": "#61AFEF"
+      "keyColor": "#88c0d0"
     },
     {
       "type": "theme",
       "key": "  ├ Theme",
-      "keyColor": "#61AFEF"
+      "keyColor": "#88c0d0"
     },
     {
       "type": "icons",
       "key": "  ├ Icons",
-      "keyColor": "#61AFEF"
+      "keyColor": "#88c0d0"
     },
     {
       "type": "terminal",
       "key": "  └ Terminal",
-      "keyColor": "#61AFEF"
+      "keyColor": "#88c0d0"
     },
     "break",
     
@@ -110,17 +110,17 @@
     {
       "type": "cpu",
       "key": "  ├ CPU",
-      "keyColor": "#61AFEF"
+      "keyColor": "#88c0d0"
     },
     {
       "type": "gpu",
       "key": "  ├ GPU",
-      "keyColor": "#61AFEF"
+      "keyColor": "#88c0d0"
     },
     {
       "type": "memory",
       "key": "  └ Memory",
-      "keyColor": "#61AFEF"
+      "keyColor": "#88c0d0"
     },
     "break",
   
