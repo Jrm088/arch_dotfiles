@@ -19,14 +19,15 @@ mkdir -p ~/.config/fastfetch
 echo "Creating symlinks from dotfiles to config locations..."
 
 # Create symlinks from dotfiles to config locations
-ln -sf ~/dotfiles/i3/config ~/.config/i3/config
-ln -sf ~/dotfiles/kitty/kitty.conf ~/.config/kitty/kitty.conf
-ln -sf ~/dotfiles/picom/picom.conf ~/.config/picom/picom.conf
-ln -sf ~/dotfiles/polybar/config.ini ~/.config/polybar/config.ini
-ln -sf ~/dotfiles/rofi/config.rasi ~/.config/rofi/config.rasi
-ln -sf ~/dotfiles/starship/starship.toml ~/.config/starship.toml
-ln -sf ~/dotfiles/vim/.vimrc ~/.vimrc
-ln -sf ~/dotfiles/fastfetch/config.jsonc ~/.config/fastfetch/config.jsonc
+ln -sf ~/arch_dotfiles/i3/config ~/.config/i3/config
+ln -sf ~/arch_dotfiles/kitty/kitty.conf ~/.config/kitty/kitty.conf
+ln -sf ~/arch_dotfiles/picom/picom.conf ~/.config/picom/picom.conf
+ln -sf ~/arch_dotfiles/polybar/config.ini ~/.config/polybar/config.ini
+ln -sf ~/arch_dotfiles/rofi/config.rasi ~/.config/rofi/config.rasi
+ln -sf ~/arch_dotfiles/starship/starship.toml ~/.config/starship.toml
+ln -sf ~/arch_dotfiles/vim/.vimrc ~/.vimrc
+ln -sf ~/arch_dotfiles/fastfetch/config.jsonc ~/.config/fastfetch/config.jsonc
+ln -sf ~/dotfiles/dunst/dunstrc ~/.config/dunst/dunstrc
 
 echo "Symlinks created successfully!"
 echo "Your dotfiles are now linked and ready to use!"

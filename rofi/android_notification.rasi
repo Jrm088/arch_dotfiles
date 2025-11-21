@@ -31,7 +31,7 @@
     active-background:           rgba ( 39, 50, 56, 100 % );
 }
 configuration {
-    font: "Hack Nerd Font 12";
+    font: "Hack Nerd Font 16";
 }
 
 window {
@@ -39,6 +39,7 @@ window {
     border:           0;
     padding:         20;
     border-radius: 10px;
+    width: 40%;
 }
 mainbox {
     border:  0;

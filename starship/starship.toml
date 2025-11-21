@@ -5,7 +5,7 @@ $character
 
 [username]
 show_always = true
-style_user = "#88c0d0"
+style_user = "bold #88c0d0"
 format = " [$user]($style)"
 
 [hostname]

@@ -1,0 +1,51 @@
+[global]
+    # Display
+    monitor = 0
+    follow = mouse
+    
+    # Geometry
+    width = 250
+    height = (0, 120)
+    origin = top-right
+    offset = (10, 50)
+    
+    # Progress bar
+    progress_bar = true
+    progress_bar_height = 10
+    progress_bar_frame_width = 1
+    
+    # Appearance
+    padding = 10
+    horizontal_padding = 10
+    frame_width = 3
+    frame_color = "#d8dee9"
+    separator_color = frame
+    font = Hack Nerd Font 12
+    
+    # Text
+    alignment = left
+    word_wrap = yes
+    
+    # Timing (SHORT!)
+    idle_threshold = 120
+    
+    # Icons
+    icon_position = left
+    max_icon_size = 32
+
+[urgency_low]
+    background = "#3b4252"
+    foreground = "#d8dee9"
+    timeout = 3
+
+[urgency_normal]
+    background = "#434c5e"
+    foreground = "#d8dee9"
+    frame_color = "#d8dee9"
+    timeout = 5
+
+[urgency_critical]
+    background = "#bf616a"
+    foreground = "#eceff4"
+    frame_color = "#d8dee9"
+    timeout = 10

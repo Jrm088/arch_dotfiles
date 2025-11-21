@@ -4,7 +4,7 @@ syntax on
 " Enable file type indent on 
 
 " Nord theme
-colorscheme nord
+"colorscheme nord
 
 " Better visibility settings
 set number	"show line numbers
