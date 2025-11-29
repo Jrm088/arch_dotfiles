@@ -78,6 +78,12 @@ bindsym $mod+q kill
 # Start Vivaldi
 bindsym $mod+b exec vivaldi
 
+# Flameshot
+bindsym Print exec flameshot gui
+
+# Flameshot with a delay
+bindsym $mod+shift+p exec flameshot gui -d 3000
+
 # start dmenu (a program launcher)
 #bindsym $mod+d exec --no-startup-id dmenu_run
 # A more modern dmenu replacement is rofi:

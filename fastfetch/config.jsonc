@@ -34,12 +34,14 @@
     {
       "type": "os",
       "key": "  ├ OS",
-      "keyColor": "#88c0d0"
+      "keyColor": "#88c0d0",
+      "format": "Arch Linux"
     },
     {
       "type": "host",
       "key": "  ├ Host",
-      "keyColor": "#88c0d0"
+      "keyColor": "#88c0d0",
+      "format": "Thinkpad T440p"
     },
     {
       "type": "kernel",
@@ -78,7 +80,8 @@
     {
       "type": "wm",
       "key": "  ├ WM",
-      "keyColor": "#88c0d0"
+      "keyColor": "#88c0d0",
+      "format": "i3"
     },
     {
       "type": "wmtheme",
@@ -88,17 +91,20 @@
     {
       "type": "theme",
       "key": "  ├ Theme",
-      "keyColor": "#88c0d0"
+      "keyColor": "#88c0d0",
+      "format": "Nordic"
     },
     {
       "type": "icons",
       "key": "  ├ Icons",
-      "keyColor": "#88c0d0"
+      "keyColor": "#88c0d0",
+      "format": "Nordic"
     },
     {
       "type": "terminal",
       "key": "  └ Terminal",
-      "keyColor": "#88c0d0"
+      "keyColor": "#88c0d0",
+      "format": "kitty"
     },
     "break",
     
@@ -110,13 +116,14 @@
     {
       "type": "cpu",
       "key": "  ├ CPU",
-      "keyColor": "#88c0d0"
+      "keyColor": "#88c0d0",
+      "format": "i7 4712mq"
     },
-    {
+    /*{
       "type": "gpu",
       "key": "  ├ GPU",
       "keyColor": "#88c0d0"
-    },
+    },*/
     {
       "type": "memory",
       "key": "  └ Memory",
