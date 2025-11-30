@@ -94,12 +94,12 @@
       "keyColor": "#88c0d0",
       "format": "Nordic"
     },
-    {
+   /* {
       "type": "icons",
       "key": "  ├ Icons",
       "keyColor": "#88c0d0",
-      "format": "Nordic"
-    },
+      "format": "Nordzy-dark"
+    },*/
     {
       "type": "terminal",
       "key": "  └ Terminal",
@@ -117,7 +117,7 @@
       "type": "cpu",
       "key": "  ├ CPU",
       "keyColor": "#88c0d0",
-      "format": "i7 4712mq"
+      "format": "i7 4712MQ"
     },
     /*{
       "type": "gpu",

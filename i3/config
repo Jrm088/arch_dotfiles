@@ -75,8 +75,8 @@ bindsym $mod+Return exec kitty
 # kill focused window
 bindsym $mod+q kill
 
-# Start Vivaldi
-bindsym $mod+b exec vivaldi
+# Start Brave
+bindsym $mod+b exec brave
 
 # Flameshot
 bindsym Print exec flameshot gui

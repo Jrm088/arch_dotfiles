@@ -22,6 +22,7 @@ sudo pacman -S --noconfirm \
   mpv cmus sxiv yt-dlp \
   curl wget w3m \
   fastfetch which tmux unzip man-db man-pages \
-  ttf-hack-nerd timeshift vivaldi
+  ttf-hack-nerd timeshift brave flameshot nordic-theme cmatrix \
+  git htop mesa 
 
 echo "Package installation complete!"
