@@ -10,7 +10,7 @@ echo "Creating config directories..."
 mkdir -p ~/.config/i3
 mkdir -p ~/.config/kitty
 mkdir -p ~/.config/picom
-mkdir -p ~/.config/polybar
+# NOTE: Don't create polybar directory - we're symlinking the entire directory
 mkdir -p ~/.config/rofi
 mkdir -p ~/.config/fastfetch
 mkdir -p ~/.config/dunst
@@ -29,7 +29,7 @@ ln -sf ~/arch_dotfiles/kitty/kitty.conf ~/.config/kitty/kitty.conf
 # Picom
 ln -sf ~/arch_dotfiles/picom/picom.conf ~/.config/picom/picom.conf
 
-# Polybar - symlink entire directory
+# Polybar - symlink entire directory (don't mkdir first!)
 ln -sf ~/arch_dotfiles/polybar ~/.config/polybar
 
 # Rofi
