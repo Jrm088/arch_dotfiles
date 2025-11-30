@@ -8,11 +8,6 @@ fi
 # Enable Starship prompt
 eval "$(starship init bash)"
 
-# Run pfetch on shell start (comment out if you don’t want this every time)
-if command -v pfetch >/dev/null 2>&1; then
-    pfetch
-fi
-
 # Handy aliases
 alias ll='ls -lah --color=auto'
 alias ls='ls --color=auto'
