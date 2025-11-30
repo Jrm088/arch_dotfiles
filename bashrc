@@ -30,9 +30,6 @@ fi
 
 # Add your custom functions or variables below
 
-# Add terminal-config directory to PATH so custom scripts inside can be run from anywhere
-export PATH="$HOME/terminal-config:$PATH"
-
 # Add betterlockscreen to PATH for easy command access
 export PATH="$PATH:$HOME/.local/bin"
 
