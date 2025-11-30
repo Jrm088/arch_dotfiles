@@ -1,0 +1,45 @@
+# Post-Install Guide
+
+## After First Boot (login as root)
+
+### Create user account
+useradd -m -G wheel yourusername
+passwd yourusername
+
+### Enable sudo for wheel group
+EDITOR=vim visudo
+# Uncomment: %wheel ALL=(ALL:ALL) ALL
+
+### Logout and login as your user
+
+## As Your User
+
+### Clone dotfiles from GitHub
+git clone https://github.com/yourusername/arch_dotfiles.git ~/arch_dotfiles
+cd ~/arch_dotfiles
+
+### Make scripts executable
+chmod +x essential_packages.sh yay_script.sh symlink_script.sh
+
+### Run install scripts
+./essential_packages.sh
+./yay_script.sh
+./symlink_script.sh
+
+### Create .xinitrc
+echo "exec i3" > ~/.xinitrc
+
+### Enable auto-start X on login (add to ~/.bash_profile)
+echo '# Auto-start X on tty1' >> ~/.bash_profile
+echo 'if [ -z "$DISPLAY" ] && [ "$XDG_VTNR" = 1 ]; then' >> ~/.bash_profile
+echo '  exec startx' >> ~/.bash_profile
+echo 'fi' >> ~/.bash_profile
+
+### Set persistent TTY font
+echo "FONT=ter-124n" | sudo tee /etc/vconsole.conf
+
+### Generate locales
+sudo locale-gen
+
+### Start i3
+startx

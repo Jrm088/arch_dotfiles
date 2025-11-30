@@ -1,0 +1,85 @@
+# My Minimal Arch Linux Installation Guide
+
+## Pre-Installation
+
+### Set larger font
+setfont ter-132b
+
+### Set NTP
+timedatectl set-ntp true
+
+### Connect to WiFi
+iwctl
+# Inside iwctl:
+device list
+station wlan0 scan
+station wlan0 get-networks
+station wlan0 connect "SSID-NAME"
+exit
+
+### Partition with cfdisk on /dev/sdb
+- EFI partition (1G)
+- Swap partition (8G)
+- Root partition (remaining space)
+
+### Format partitions (sdb ONLY - DO NOT FORMAT sda!)
+mkfs.ext4 /dev/sdb3
+mkswap /dev/sdb2
+mkfs.fat -F 32 /dev/sdb1
+
+### Mount file systems
+mount /dev/sdb3 /mnt
+mount --mkdir /dev/sdb1 /mnt/boot/efi
+swapon /dev/sdb2
+mount --mkdir /dev/sda1 /mnt/home  # mount existing home!
+
+### Verify mounts
+lsblk
+
+### Configure mirrors
+reflector --country US --latest 5 --sort rate --save /etc/pacman.d/mirrorlist
+
+### Install essential packages
+pacstrap /mnt base linux linux-firmware intel-ucode base-devel git sudo networkmanager vim
+
+### Generate fstab
+genfstab -U /mnt >> /mnt/etc/fstab
+
+## System Configuration
+
+### Chroot
+arch-chroot /mnt
+
+### Time zone
+ln -sf /usr/share/zoneinfo/America/New_York /etc/localtime
+hwclock --systohc
+
+### Localization
+vim /etc/locale.gen
+# Uncomment: en_US.UTF-8 UTF-8
+locale-gen
+echo "LANG=en_US.UTF-8" > /etc/locale.conf
+
+### Network configuration
+echo "yourhostname" > /etc/hostname
+
+### Initramfs
+mkinitcpio -P
+
+### Root password
+passwd
+
+### Boot loader
+pacman -S grub efibootmgr
+grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=GRUB
+grub-mkconfig -o /boot/grub/grub.cfg
+
+### Enable NetworkManager
+systemctl enable NetworkManager
+
+### Exit chroot and unmount
+exit
+umount -R /mnt
+
+### Reboot
+reboot
