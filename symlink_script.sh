@@ -25,6 +25,8 @@ ln -sf ~/arch_dotfiles/i3/config ~/.config/i3/config
 
 # Kitty
 ln -sf ~/arch_dotfiles/kitty/kitty.conf ~/.config/kitty/kitty.conf
+ln -sf ~/arch_dotfiles/kitty/nord.conf ~/.config/kitty/nord.conf
+ln -sf ~/arch_dotfiles/kitty/current-theme.conf ~/.config/kitty/current-theme.conf
 
 # Picom
 ln -sf ~/arch_dotfiles/picom/picom.conf ~/.config/picom/picom.conf
