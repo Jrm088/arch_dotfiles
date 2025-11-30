@@ -23,6 +23,6 @@ sudo pacman -S --noconfirm \
   curl wget w3m \
   fastfetch which tmux unzip man-db man-pages \
   ttf-hack-nerd timeshift brave flameshot nordic-theme cmatrix \
-  git htop mesa terminus-font
+  git htop mesa terminus-font bat
 
 echo "Package installation complete!"

@@ -10,6 +10,7 @@ echo "Creating config directories..."
 mkdir -p ~/.config/i3
 mkdir -p ~/.config/kitty
 mkdir -p ~/.config/picom
+mkdir -p ~/.config/bat
 # NOTE: Don't create polybar directory - we're symlinking the entire directory
 mkdir -p ~/.config/rofi
 mkdir -p ~/.config/fastfetch
@@ -50,6 +51,9 @@ ln -sf ~/arch_dotfiles/fastfetch/config.jsonc ~/.config/fastfetch/config.jsonc
 # Vim - symlink entire directory + vimrc
 ln -sf ~/arch_dotfiles/vim ~/.vim
 ln -sf ~/arch_dotfiles/vim/vimrc ~/.vimrc
+
+# Bat
+ln -sf ~/arch_dotfiles/bat/config ~/.config/bat/config
 
 echo "Symlinks created successfully!"
 echo "Your dotfiles are now linked and ready to use!"
