@@ -11,6 +11,9 @@ mkdir -p ~/.config/i3
 mkdir -p ~/.config/kitty
 mkdir -p ~/.config/picom
 mkdir -p ~/.config/bat
+mkdir -p ~/.config/mpv
+mkdir -p ~/.config/cava
+
 # NOTE: Don't create polybar directory - we're symlinking the entire directory
 mkdir -p ~/.config/rofi
 mkdir -p ~/.config/fastfetch
@@ -54,6 +57,12 @@ ln -sf ~/arch_dotfiles/vim/vimrc ~/.vimrc
 
 # Bat
 ln -sf ~/arch_dotfiles/bat/config ~/.config/bat/config
+
+# Cava 
+ln -sf ~/arch_dotfiles/cava/config ~/.config/cava/config
+
+# Mpv 
+ln -sf ~/arch_dotfiles/mpv/input.conf ~/.config/mpv/input.conf
 
 echo "Symlinks created successfully!"
 echo "Your dotfiles are now linked and ready to use!"
