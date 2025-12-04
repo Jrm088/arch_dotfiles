@@ -76,7 +76,10 @@ export PATH="$HOME/.npm/bin:$PATH"
 export PATH="$HOME/zig-linux-x86_64-0.13.0:$PATH"
 export PATH=$PATH:/usr/lib/protonmail/bridge
 
-#BAT THEME
+# BAT THEME
 export BAT_THEME="Nord"
+
+# Manpager
+export MANPAGER="sh -c 'col -bx | bat -l man -p --theme=Nord'"
 
 fastfetch
